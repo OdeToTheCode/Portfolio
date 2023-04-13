@@ -1,9 +1,14 @@
 
 
-function Wrapper() {
+const Wrapper = ({children}) => {
 
   return (
-    <div>
+    <div style={{
+      minHeight: "100vh",
+      backgroundColor: "grey",
+      padding: "50px"
+    }}>
+      { children }
 
     </div>
   )

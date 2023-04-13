@@ -15,10 +15,12 @@ const Footer = (props) => {
       backgroundcolor: "grey",
       color: "blue",
       textAlign: "center",
+      alignContent: "center",
       padding: "20px",
     }}>
-      <p className="row" style={{color: 'black'}}> &copy; {currentYear} {firstName} {lastName} </p>
-      <div className="row" style={{textAlign: 'center'}}>
+      <div className="col-12" style={{alignContent: 'center'}}>
+
+        <p className="col-12" style={{color: 'black'}}> &copy; {currentYear} {firstName} {lastName} </p>
         
         <a className='col-4'href={`https://github.com/${userName}`} target="_blank" rel="noopener noreferrer" style={{margin: '10px', color: 'black' }}><FontAwesomeIcon icon={['fab', 'github']} style={{color: 'black', paddingRight: '5px'}} />GitHub</a>
 
